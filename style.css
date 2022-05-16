@@ -1,0 +1,205 @@
+/*....... BODY ..........*/
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color: #ffffff;
+}
+
+.bloomreach-container {
+  display: block;
+  text-align: left;
+  background-color: #FFD500;
+  height: 80px;
+}
+
+.bloomreach-logo {
+  margin-left: 18%;
+  margin-top: 23px;
+}
+
+/*............. NAVIGATION-PRPERTIES...........*/
+.navigation-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 1px solid #1c173327;
+}
+
+.navigation-container .navigation {
+  margin-top: 18px;
+  margin-left: 18%;
+  margin-bottom: 7px;
+}
+
+.navigation-container .navigation a {
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 12px;
+  color: #1C1733;
+  font-weight: 400;
+  padding: 9px 12px;
+  background-color: #ffffff;
+}
+
+.navigation-container .navigation a:hover {
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 9px 12px 10px 12px;
+  border-top: 1px solid #1c173327;
+  border-left: 1px solid #1c173327;
+  border-right: 1px solid #1c173327;
+  border-bottom: 1px solid #ffffff;
+}
+
+/*............... CARDS...............*/
+#card-container {
+  margin-top: 35px;
+}
+
+.card {
+  width: 248px;
+  height: 217px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card .team {
+  width: 36px;
+  margin-bottom: 15px;
+}
+
+#first-border {
+  border-color: #FFD500;
+  border-radius: 10px;
+}
+
+#first-border:hover {
+  -webkit-box-shadow: 1px 1px 3px 1px #888888;
+          box-shadow: 1px 1px 3px 1px #888888;
+  cursor: pointer;
+}
+
+#second-border {
+  border-color: #2DBAEE;
+  border-radius: 10px;
+}
+
+#second-border:hover {
+  -webkit-box-shadow: 1px 1px 3px 1px #888888;
+          box-shadow: 1px 1px 3px 1px #888888;
+  cursor: pointer;
+}
+
+#third-border {
+  border-color: #F84CAC;
+  border-radius: 10px;
+}
+
+#third-border:hover {
+  -webkit-box-shadow: 1px 1px 3px 1px #888888;
+          box-shadow: 1px 1px 3px 1px #888888;
+  cursor: pointer;
+}
+
+/*----------------FOOTER------------------*/
+.footer-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 100px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.horizontal {
+  width: 68%;
+  border-bottom: 1px solid #1c173327;
+}
+
+.footer-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-action a {
+  margin-right: 50px;
+}
+
+.first-step {
+  margin-left: 17.5%;
+  margin-top: 20px;
+}
+
+.session-tree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.session-tree #footer-dropdown {
+  margin-left: 15px;
+}
+
+.button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 80px;
+}
+
+.add {
+  width: 960px;
+  height: 32px;
+  color: #2DBAEE;
+  font-weight: 700;
+  border: none;
+  background-color: #2dbaee35;
+  border-radius: 10px;
+  margin-top: 80px;
+}
+
+.add:hover {
+  -webkit-box-shadow: 1px 1px 3px 1px #888888;
+          box-shadow: 1px 1px 3px 1px #888888;
+}
+
+/*----------MEDIA --------- QUERY ----------*/
+@media screen and (max-width: 576px) {
+  .card {
+    margin-left: 25%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

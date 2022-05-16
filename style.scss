@@ -1,0 +1,211 @@
+$menu-background: #FFD500;
+$font-normal: 'Lato', sans-serif;
+$color-basic: #1C1733;
+$background-main-color: #ffffff;
+$border-first: #FFD500;
+$border-second:#2DBAEE;
+$border-third:#F84CAC;
+
+
+
+
+/*....... BODY ..........*/
+
+
+body{
+    margin: 0;
+    font-family: $font-normal;
+    background-color: $background-main-color;
+}
+
+
+.bloomreach-container {
+    display: block;
+    text-align: left;
+    background-color: $menu-background;
+    height: 80px; 
+}
+
+.bloomreach-logo {
+    margin-left: 18%;
+    margin-top: 23px;
+}
+
+/*............. NAVIGATION-PRPERTIES...........*/
+
+.navigation-container{
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-bottom: 1px solid #1c173327;
+
+        .navigation {
+            margin-top: 18px;
+            margin-left: 18%;   
+            margin-bottom: 7px; 
+
+            a {
+                text-decoration: none;
+                margin-left: 10px;
+                font-size: 12px;
+                color:$color-basic;
+                font-weight: 400;
+                padding: 9px 12px;
+                background-color: $background-main-color;
+
+                &:hover {
+                    font-weight: bold;
+                    border-radius: 5px;
+                    padding: 9px 12px 10px 12px;
+                    border-top: 1px solid #1c173327;
+                    border-left: 1px solid #1c173327;
+                    border-right: 1px solid #1c173327;
+                    border-bottom: 1px solid $background-main-color;
+                }
+            }
+        }
+}
+
+/*............... CARDS...............*/
+
+#card-container{
+    margin-top: 35px;
+}
+
+.card {
+    width: 248px;
+    height: 217px;   
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    margin-top: 20px;
+    
+      
+    
+    .team {
+        width: 36px;
+        margin-bottom: 15px;
+        
+    }
+    
+}
+
+#first-border {
+    border-color: $border-first;
+    border-radius: 10px;
+    
+    &:hover {
+        box-shadow: 1px 1px 3px 1px #888888;
+        cursor: pointer;
+    }
+
+    
+}
+
+#second-border {
+    border-color: $border-second;
+    border-radius: 10px;
+    
+
+    &:hover {
+        box-shadow: 1px 1px 3px 1px #888888;
+        cursor: pointer;
+    }
+}
+
+#third-border {
+    border-color: $border-third;
+    border-radius: 10px;
+
+    
+    &:hover {
+        box-shadow: 1px 1px 3px 1px #888888;
+        cursor: pointer;
+    }
+}
+
+/*----------------FOOTER------------------*/
+
+.footer-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+    padding-bottom: 10px;   
+    width: 100%;
+}
+
+.horizontal {
+    
+   
+    width: 68%;
+    border-bottom: 1px solid #1c173327;
+}
+
+  
+
+    .footer-action{
+        display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+
+         a {
+             margin-right: 50px;
+         }
+        
+    }
+
+
+.first-step {
+    margin-left: 17.5%;
+    margin-top: 20px;
+}
+
+.session-tree {
+    display: flex;
+
+    #footer-dropdown {
+        margin-left:15px;
+    }
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.add {
+   width:960px;
+   height: 32px;
+   color: #2DBAEE;
+   font-weight: 700;
+   border: none;
+   background-color: #2dbaee35;
+   border-radius: 10px;
+   margin-top: 80px;
+   
+
+   &:hover {
+    box-shadow: 1px 1px 3px 1px #888888;
+   }
+}
+
+
+
+
+
+
+/*----------MEDIA --------- QUERY ----------*/
+
+
+$small: 576px;
+@media screen and (max-width: $small) {
+
+    .card {
+    margin-left: 25%;
+
+    }
+}
+      

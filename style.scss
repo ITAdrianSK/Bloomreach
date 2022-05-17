@@ -9,7 +9,7 @@ $border-third:#F84CAC;
 
 
 
-/*....... BODY ..........*/
+/*......... BODY ..........*/
 
 
 body{
@@ -69,37 +69,40 @@ body{
 /*............... CARDS...............*/
 
 #card-container{
-    margin-top: 35px;
+    margin-top: 65px;
+    max-width:1100px;
+    margin-left:auto;
+    margin-right: auto;
+    width: 100%;  
 }
 
+
 .card {
-    width: 248px;
+    max-width: 248px;
     height: 217px;   
     justify-content: center;
     align-items: center;
     text-align: center;  
-    margin-top: 20px;
-    
-      
+    display: flex;
+    margin-top: 20px;  
+     
     
     .team {
         width: 36px;
         margin-bottom: 15px;
         
-    }
-    
+    }   
 }
 
 #first-border {
     border-color: $border-first;
     border-radius: 10px;
+    padding: 0px; 
     
     &:hover {
-        box-shadow: 1px 1px 3px 1px #888888;
+        box-shadow: 0px 4px 8px rgba(102, 103, 128, 0.25);
         cursor: pointer;
-    }
-
-    
+    } 
 }
 
 #second-border {
@@ -108,7 +111,7 @@ body{
     
 
     &:hover {
-        box-shadow: 1px 1px 3px 1px #888888;
+        box-shadow: 0px 4px 8px rgba(102, 103, 128, 0.25);
         cursor: pointer;
     }
 }
@@ -119,7 +122,7 @@ body{
 
     
     &:hover {
-        box-shadow: 1px 1px 3px 1px #888888;
+        box-shadow: 0px 4px 8px rgba(102, 103, 128, 0.25);
         cursor: pointer;
     }
 }
@@ -129,46 +132,114 @@ body{
 .footer-title {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-top: 100px;
-    padding-bottom: 10px;   
-    width: 100%;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 77px;
+    padding-bottom: 5px;   
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+
+
 }
 
 .horizontal {
-    
-   
-    width: 68%;
+    width: 60%;
     border-bottom: 1px solid #1c173327;
+
 }
 
   
 
     .footer-action{
         display: flex;
-         flex-direction: row;
-         justify-content: center;
-         align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
 
          a {
              margin-right: 50px;
+             font-weight: 700;
+             color:#2DBAEE;
          }
         
     }
 
+   
 
 .first-step {
-    margin-left: 17.5%;
-    margin-top: 20px;
-}
-
-.session-tree {
     display: flex;
+    flex-direction: column;
+    width: 57%;
+    margin-right: auto;
+    margin-left: auto;
 
-    #footer-dropdown {
-        margin-left:15px;
+    .step-title {
+       margin-left: 15px;
+    }
+
+    .dropdown {
+        border: 1px solid rgba(0, 0, 0, 0.321);
+        border-radius: 5px;
+        margin-left: 10px;
+       
     }
 }
+
+
+.session-one{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.session-two{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left:10.4%;
+
+    .and {
+        color: #666880;
+        font-weight: 700;
+        margin-top: 18px;
+        font-size: 12px;
+        margin-left: 13px;
+    }
+}
+
+label {
+    margin-top: 6px;
+    margin-left: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.638);
+    background-color: #1c17330e;
+    border-radius: 5px 5px 5px 5px;
+    padding: 0px 0px 0px 10px;
+    color: #1c1733;
+} 
+
+
+
+input {
+    
+  height: 35px;
+  border-radius: 0px 5px 5px 0px;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+
+}
+
+.refine {
+    color: #2DBAEE;
+    margin-left: 15.5%;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+
 
 .button-container {
     display: flex;
@@ -177,7 +248,7 @@ body{
 }
 
 .add {
-   width:960px;
+   width:57%;
    height: 32px;
    color: #2DBAEE;
    font-weight: 700;
@@ -188,24 +259,98 @@ body{
    
 
    &:hover {
-    box-shadow: 1px 1px 3px 1px #888888;
+    box-shadow: 0px 4px 8px rgba(102, 103, 128, 0.25);
    }
 }
 
 
-
-
-
-
 /*----------MEDIA --------- QUERY ----------*/
+
+$large: 1050px;
+@media screen and (max-width: $large) {
+        .first-step {
+            width: 80%;     
+    }
+        
+        .add {
+            width:80%;
+        }
+
+        .horizontal {
+            width: 80%;
+            border-bottom: 1px solid #1c173327;
+
+        }
+
+        .footer-title {
+            width: 80%;
+
+        h3 {
+            font-size: 1.2em;
+        }
+
+        a {
+            font-size: 0.8em;
+            text-align: center;
+        }
+
+ }
+}
+
+
+
+$medium: 750px;
+@media screen and (max-width: $medium) {
+
+    .session-one{
+        flex-direction: column;   
+    }
+    
+    .session-two{
+        flex-direction: column;
+        margin-left:0.4%;    
+    }
+
+    .step-title {
+        margin-top: 10px;
+        margin-left: 0px;
+        text-align: center;
+        margin-bottom: 20px;
+     }
+
+     .refine {
+        color: #2DBAEE;
+        margin-left: 0%;
+        text-align: center;
+        font-weight: 700;
+        margin-top: 15px;
+    }
+
+}
+      
+
+
 
 
 $small: 576px;
 @media screen and (max-width: $small) {
 
-    .card {
-    margin-left: 25%;
+    .navigation-container{
+            .navigation {
+                margin-top: 18px;
+                margin-left: 0%;   
+                margin-bottom: 7px; 
 
+                a {         
+                    margin-left: 7px;    
+                }
+            }
+        }
+  
+
+    .card {
+        margin-left: 20%;
+   
     }
 }
       

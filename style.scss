@@ -299,7 +299,7 @@ $large: 1050px;
 
 
 
-$medium: 750px;
+$medium: 767px;
 @media screen and (max-width: $medium) {
 
     .session-one{
@@ -324,6 +324,11 @@ $medium: 750px;
         text-align: center;
         font-weight: 700;
         margin-top: 15px;
+    }
+
+    .card {
+        margin-left: 12%;
+   
     }
 
 }

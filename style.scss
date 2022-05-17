@@ -69,7 +69,7 @@ body{
 /*............... CARDS...............*/
 
 #card-container{
-    margin-top: 65px;
+    margin-top: 55px;
     max-width:1100px;
     margin-left:auto;
     margin-right: auto;
@@ -97,7 +97,7 @@ body{
 #first-border {
     border-color: $border-first;
     border-radius: 10px;
-    padding: 0px; 
+     
     
     &:hover {
         box-shadow: 0px 4px 8px rgba(102, 103, 128, 0.25);
@@ -349,8 +349,28 @@ $small: 576px;
   
 
     .card {
-        margin-left: 20%;
+        margin-left: 17%;
    
     }
 }
       
+
+$extra-small: 380px;
+@media screen and (max-width: $extra-small) {
+    
+
+    .card {
+        margin-left: 12%;
+   
+    }
+}
+
+$iphone5s: 330px;
+@media screen and (max-width: $iphone5s) {
+    
+
+    .card {
+        margin-left: 9%;
+   
+    }
+}
